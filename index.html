@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" type="image/png" href="img/pika.png"> <!-- Pikachu Favicon -->
+    <title>Pokedex-san Application</title>
+    <!-- Link (Bootstrap) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/styles.min.css"> <!-- Link (CSS-Minified) -->
+  </head>
+  <body>
+    <header class="container-fluid sticky-top" style="margin-bottom: 15px"><h1 class="page-title ">Pokedex List</h1> </header>
+    <section class="poke-section" style=" margin: auto;">
+		<h6 class="page-title">Pokemon Selection</h6>
+      <ul class="list-group"></ul>
+    </section>
+      <!-- Begin Bootstrap Model -->
+    <div class="modal fade" id="PokeModal" tabindex="-1" role="dialog" aria-labelledby="pokeName" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pokeName">Pokemon Name</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="#" id="pokeImg" alt="Pokemon Image">
+            <p id="pokeHeight"></p>
+            <p id="pokeWeight"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Bootstrap Model -->
+    <footer class="container page-footer"><p>Find Me On</p><!-- Misc. Social Media -->
+      <div class="social-media">
+        <a href="https://github.com/rajeski" target="_blank"><img src="img/githubsvg.svg"  alt="GitHub Logo"></a>
+        <a href="#" target="_blank"><img src="img/twittersvg.svg"  alt="Twitter Logo"></a>
+        <a href="#" target="_blank"><img src="img/linkedInsvg.svg" alt="LinkedIn Logo"></a>
+      </div>
+        <br>
+      <script>
+        document.write("Last Updated: " +document.lastModified);/* Display Date & Time Website Updated */
+      </script>
+      <p>&copy MIUAIGA</p>
+    </footer>
+     <script src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script> <!-- Link (Jquery CDN) -->
+     <!-- Link JS / Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script  src="dist/script.min.js"> </script><!-- Link (JavaScript-minified) -->
+
+  </body>
+</html>
