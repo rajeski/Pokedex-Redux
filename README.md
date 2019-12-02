@@ -1,2 +1,2 @@
-# Pokedex-Redux
+# Pokedex-san
 Pokemon Reboot Project
